@@ -1,0 +1,12 @@
+body { }
+
+
+ul {
+    padding-top:20px;
+}
+
+li {padding-bottom:15px}
+blockquote{
+    width:50%;
+    border: 1px solid gray;
+}
