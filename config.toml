@@ -1,3 +1,44 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "https://hirokidaichi.github.io"
+languageCode = "ja"
+title = "HirokiDaichi Profile "
+publishDir = "docs/"
+theme = "personal-web"
+
+enableEmoji=true
+enableRobotsTXT=true
+pygmentsUseClasses=true
+pygmentsCodeFences=true
+
+[params.assets]
+    customCSS = "./css/custom.css"
+[params.intro]
+  main = "広木 大地(Hiroki Daichi)"
+  sub = "Software Engineer / Engineering Manager / DX Consultant"
+
+[taxonomies]
+  design = "designs"
+  tech = "techs"
+
+[blackfriday]
+  hrefTargetBlank = true
+
+[params]
+  accentColor = "#267CA7"
+  mainSections = ['portfolio'] # values: ['post', 'portfolio'] only accept one section, to be displayed bellow 404
+
+[params.sidebar]
+  backgroundImage = 'images/unsplash.jpg' # header background image - default "/images/default_sidebar.jpg" - Photo by Tim Marshall on Unsplash
+  gradientOverlay = '' # default: rgba(0,0,0,0.4),rgba(0,0,0,0.4)
+  logo = "images/hiroki.png" # - default "/images/edna-west.jpg"
+
+
+[params.social]
+  github = "https://github.com/hirokidaichi"
+  twitter = "https://twitter.com/hiroki_daichi"
+  facebook = "https://www.facebook.com/hirokidaichi"
+
+[params.notFound]
+  gopher = "/images/gopher.png" # checkout https://gopherize.me/
+  h1 = 'Bummer!'
+  p = "It seems that this page doesn't exist."
+
