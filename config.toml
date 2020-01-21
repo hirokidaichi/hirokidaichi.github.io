@@ -13,7 +13,7 @@ pygmentsCodeFences=true
     customCSS = "./css/custom.css"
 [params.intro]
   main = "広木 大地(Hiroki Daichi)"
-  sub = "Software Engineer / Engineering Manager / DX Consultant"
+  sub = "Software Engineer / Engineering Manager / Organization Architect"
 
 [taxonomies]
   design = "designs"
