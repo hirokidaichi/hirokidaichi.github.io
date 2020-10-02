@@ -1,6 +1,6 @@
 
 ## Introduction
-私の自己紹介等が必要な場合、必要な文字数に合わせて以下からご利用ください。
+インタビュー記事や、講演などのサイト制作のために私のプロフィールがご入用でしたら、以下から適切なサイズの自己紹介を選択し、コピーしてご使用ください。
 
 ### 50文字弱
 
@@ -18,13 +18,13 @@
 1983年生まれ。筑波大学大学院を卒業後、2008年に新卒第1期として株式会社ミクシィに入社。同社のアーキテクトとして、技術戦略から組織構築などに携わる。同社メディア開発部長、開発部部長、サービス本部長執行役員を務めた後、2015年退社。現在は、株式会社レクターを創業し、技術と経営をつなぐ技術組織のアドバイザリーとして、多数の会社の経営支援を行っている。著書『エンジニアリング組織論への招待～不確実性に向き合う思考と組織のリファクタング』が第6回ブクログ大賞・ビジネス書部門大賞、翔泳社ITエンジニアに読んでほしい技術書大賞2019・技術書大賞受賞。一般社団法人日本CTO協会理事。
 ```
 
-## 所属
+## Photo
++ [プロフィール写真が必要な場合はこちらから](/img/hiroki.png)
 
+## 所属
 + [株式会社レクター](https://rector.co.jp/)
 + [一般社団法人 日本CTO協会](https://cto-a.org/)
 
-## 写真
-+ [プロフィール写真が必要な場合はこちらから](/img/hiroki.png)
 
 ## 書籍
 + [エンジニアリング組織論への招待 ～不確実性に向き合う思考と組織のリファクタリング](https://amzn.to/30rbXlA)
@@ -50,6 +50,7 @@
 ## インタビュー記事
 - 日本経済新聞 [CTO協会、企業のデジタル化「自己診断」基準公開](https://www.nikkei.com/article/DGXMZO53262030S9A211C1XY0000/)
 + 日本経済新聞 私見卓見[「2つのDXでデジタル化を　広木大地氏」](https://www.nikkei.com/article/DGXMZO52947260U9A201C1SHE000/)
++ [「日本のDXは片輪が抜け落ちた状態」デジタルトランスフォーメーション実現へ「5つの鉄則」](https://ix-careercompass.jp/article/4522/)
 + [「DXで非人間的な仕事を取り除く」ー【COMEMO KOLインタビュー】広木大地さん](https://comemo.nikkei.com/n/ncce26e713401)
 + [「コンピュータ」か「人間」かという区別をしない組織への招待ー広木大地さんブクログ大賞受賞記念インタビュー前編](https://hon.booklog.jp/interview/hirkoki-20190129)
 + [「挑戦できない国」だと思われている今の日本は「異常な事態」―広木大地さんブクログ大賞受賞記念インタビュー後編](https://hon.booklog.jp/interview/hirkoki-20190130)
@@ -61,6 +62,14 @@
 + ["一緒に働くメンバーにとっても""本物に会える場所""をコレクション投稿SNSと製品ミュージアムに特化したSaaSサービスを運営するミューゼオが目指す組織"Findy](https://findy-code.io/interviews/muuseo-engineer)
 
 ## イベント登壇
+
+- 2020/09 [89祭り2020オンライン -招待講演-](https://topics.shiftinc.jp/bugfes2020/)
+- 2020/08 [ARI主催Webセミナー -内製化の勘所と落とし穴-](https://connpass.com/event/182761/)
+    - [講演動画](https://youtu.be/jAzfnIp6r-w) 
+- 2020/07 [Qiita夏祭り2020オンライン](https://blog.qiita.com/summerfestival-2020-presents/)
+- 2020/06 [CTO meetup コロナ時代のエンジニア組織戦略](https://flxy.jp/article/13029)
+- 2020/06 [技育祭2020](https://talent.supporterz.jp/geekten/2020/)
+- 2020/02 [Developer Submit 2020 ITエンジニア本大賞2020]()
 - 2020/01 [E-JAWS カンファレンス 2020 TOKYO](https://aws.amazon.com/jp/about-aws/events/2020/ejawsconf2020122/)
 - 2019/12 [Cloud Native Talk Night vol.2 【人とシステムの組織論】～OSS界隈のエキスパートと語り合う「クラウドネイティブの今」～](https://itmait02.peatix.com/?lang=ja)
     - [クラウド・ネイティブは”人とシステム”をどう変えるのか？OSS界隈のエキスパートの組織論](https://logmi.jp/tech/articles/322373)
@@ -95,10 +104,8 @@
 + 2018/04 書籍コラボイベント[エンジニアリング組織論への招待 ☓ カイゼン・ジャーニー](https://devlove.doorkeeper.jp/events/72717)
 
 
-# note
-
 # Qiita
-
++ [開発チームの生産性・健全性を客観的に知るためにリポジトリ履歴から機械的に可視化するツールを作った](https://qiita.com/hirokidaichi/items/ceece347f808cc9d14dd)
 + ["技術的負債"論の道案内 - アーキテクチャの資本コストと情報の非対称性](https://qiita.com/hirokidaichi/items/c66682a64ac2fc59cdf3)
 + [エンジニアリングマネージャ/プロダクトマネージャのための知識体系と読書ガイド](https://qiita.com/hirokidaichi/items/95678bb1cef32629c317)
 + [１００名に聞いた！エンジニアリングマネージャーの給与と責務の実態調査](https://qiita.com/hirokidaichi/items/6a8a5e8bfab1e93629a0)
@@ -134,3 +141,7 @@
 + [そろそろ理解しておきたいのでDockerのソースコードをビジュアルに読む！](https://qiita.com/hirokidaichi/items/52fc6286c9e432792a07)
 + [エンジニアなら知っておきたい障害報告&再発防止策の考え方](https://qiita.com/hirokidaichi/items/f9f4549c88aaf8b38bda)
 + [MVCの流れを簡単にまとめてみる](https://qiita.com/hirokidaichi/items/0de5ca336de862cc91bd)
+
+
+
+
