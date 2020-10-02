@@ -1,19 +1,28 @@
 {
-  "name": "hirokidaichi.github.io",
+  "name": "with-typescript",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export -o docs/",
+    "type-check": "tsc"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hirokidaichi/hirokidaichi.github.io.git"
+  "dependencies": {
+    "codecopy": "^1.0.2",
+    "next": "latest",
+    "react": "^16.12.0",
+    "react-codecopy": "^4.2.1",
+    "react-dom": "^16.12.0",
+    "react-markdown": "^4.3.1",
+    "react-mdl": "^2.1.0"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hirokidaichi/hirokidaichi.github.io/issues"
+  "devDependencies": {
+    "@types/react-mdl": "^1.7.27",
+    "@types/node": "^12.12.21",
+    "@types/react": "^16.9.16",
+    "@types/react-dom": "^16.9.4",
+    "typescript": "4.0"
   },
-  "homepage": "https://github.com/hirokidaichi/hirokidaichi.github.io#readme"
+  "license": "MIT"
 }
