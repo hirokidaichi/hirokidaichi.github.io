@@ -5,7 +5,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "next export -o docs/",
+    "export": "next export -o docs/ && touch .docs/.nojekyll",
+    "deploy": "git subtree push --prefix docs/ origin master",
     "type-check": "tsc"
   },
   "dependencies": {
