@@ -20,22 +20,28 @@ const codecopy = require("codecopy");
 
 const Content = ({  markdown }:any) => {
   useEffect(() => {
-    console.log("helloworld");
     codecopy("pre")
   });
   return (
-    <div>
-      <main>
-        <section>
-          <Markdown source={markdown} />
-        </section>
-      </main>
-    </div>
+    <section>
+      <Markdown source={markdown} />
+    </section>
   )
 }
 
+const ArticleList = ({ mediaTitle,data }:any) => {
+  const list = data.map((e:any) => { 
+    return (<li><a href={e.url}>{e.title}</a></li>)
+  });
+  return (
+    <section>
+      <h1> {mediaTitle} </h1>
+      <ul>{list}</ul>
+    </section>
+  )
+}
 
-const IndexPage = ({ content} :any) => {
+const IndexPage = ({ content,qiitaList,noteList} :any) => {
 
   return (
     <>
@@ -44,7 +50,13 @@ const IndexPage = ({ content} :any) => {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codecopy/umd/codecopy.min.css"></link>
       </Head>
       <Header />
-      <Content markdown={content}/>
+      <div>
+        <main>
+          <Content markdown={content} />
+          <ArticleList mediaTitle="Qiitaの記事一覧" data={qiitaList} />
+          <ArticleList mediaTitle="noteの記事一覧" data={noteList} />
+        </main>
+      </div>
     </>
   );
 
@@ -53,10 +65,31 @@ import fs from 'fs';
 
 const fsp = fs.promises;
 
+const getQiitaArticles = async () => {
+  const data = await (await fetch("https://qiita.com/api/v2/users/hirokidaichi/items?per_page=100")).json();
+  return data.map((e:any) => ({ title: e.title, url: e.url }));
+};
+
+const getNoteArticles = async () => {
+  const json = await (await fetch("https://note.com/api/v2/creators/hirokidaichi/contents?kind=note&page=1")).json();
+  const contents = json.data.contents;
+
+  return contents.map((e:any) => (
+    { title: e.name, url: `https://note.com/hirokidaichi/${e.key}` }
+  ));
+};
+
+const getMarkdown = async () => {
+  return String(await fsp.readFile("./data/_index.md"));
+};
+
 export const getStaticProps = async() => { 
-  const content = String(await fsp.readFile("./data/_index.md"));
+  const content = await getMarkdown();
+  const qiitaList = await getQiitaArticles();
+  const noteList = await getNoteArticles();
+
   return {
-    props: { content }
+    props: { content,qiitaList ,noteList}
   }
 }
 export default IndexPage
