@@ -48,6 +48,7 @@ const IndexPage = ({ content,qiitaList,noteList} :any) => {
       <Head>
         <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codecopy/umd/codecopy.min.css"></link>
+
       </Head>
       <Header />
       <div>
@@ -83,7 +84,7 @@ const getMarkdown = async () => {
   return String(await fsp.readFile("./data/_index.md"));
 };
 
-export const getStaticProps = async() => { 
+export const getStaticProps = async () => { 
   const content = await getMarkdown();
   const qiitaList = await getQiitaArticles();
   const noteList = await getNoteArticles();
