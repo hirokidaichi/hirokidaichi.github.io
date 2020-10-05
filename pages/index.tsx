@@ -48,7 +48,7 @@ const IndexPage = ({ content,qiitaList,noteList} :any) => {
       <Head>
         <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codecopy/umd/codecopy.min.css"></link>
-
+        <meta name="viewport" content="width=device-width,initial-scale=1"></meta>
       </Head>
       <Header />
       <div>

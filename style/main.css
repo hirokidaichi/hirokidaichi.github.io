@@ -112,5 +112,8 @@ main pre{
     main {
         margin-left:0;
     }
+    main section{
+        width:90%;
+    }
 
   }
