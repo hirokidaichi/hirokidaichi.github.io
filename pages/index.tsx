@@ -3,7 +3,8 @@ import Markdown from "react-markdown";
 import Head from "next/head";
 
 
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
+import { Tabs,Tab,ListGroup } from 'react-bootstrap';
 
 const Header = () => (
   <header>
@@ -35,13 +36,15 @@ const ArticleList = ({ mediaTitle,data }:any) => {
   });
   return (
     <section>
-      <h1> {mediaTitle} </h1>
-      <ul>{list}</ul>
+      <h2> {mediaTitle} </h2>
+      <ul>
+        {list}
+      </ul>
     </section>
   )
 }
 
-const IndexPage = ({ content,qiitaList,noteList} :any) => {
+const IndexPage = ({ content,qiitaList,noteList,event,interview} :any) => {
 
   return (
     <>
@@ -52,10 +55,25 @@ const IndexPage = ({ content,qiitaList,noteList} :any) => {
       </Head>
       <Header />
       <div>
+
         <main>
-          <Content markdown={content} />
-          <ArticleList mediaTitle="Qiitaの記事一覧" data={qiitaList} />
-          <ArticleList mediaTitle="noteの記事一覧" data={noteList} />
+          <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
+            <Tab eventKey="profile" title="Profile">
+              <Content markdown={content} />
+            </Tab>
+            <Tab eventKey="interview" title="Interview">
+              <Content markdown={interview} />
+            </Tab>
+            <Tab eventKey="event" title="Event">
+              <Content markdown={event} />
+            </Tab>
+            <Tab eventKey="qiita" title="Qiita">
+              <ArticleList mediaTitle="Qiitaの記事一覧" data={qiitaList} />
+            </Tab>
+            <Tab eventKey="note" title="Note" >
+              <ArticleList mediaTitle="noteの記事一覧" data={noteList} />
+            </Tab>
+          </Tabs>
         </main>
       </div>
     </>
@@ -80,17 +98,21 @@ const getNoteArticles = async () => {
   ));
 };
 
-const getMarkdown = async () => {
-  return String(await fsp.readFile("./data/_index.md"));
+const getMarkdown = async (fileName:string) :Promise<string> => {
+  return String(await fsp.readFile(`./data/${fileName}`));
 };
 
 export const getStaticProps = async () => { 
-  const content = await getMarkdown();
+  const content = await getMarkdown("_index.md");
+  const event = await getMarkdown("_event.md");
+  const interview = await getMarkdown("_interview.md");
   const qiitaList = await getQiitaArticles();
   const noteList = await getNoteArticles();
 
   return {
-    props: { content,qiitaList ,noteList}
+    props: {
+      content, qiitaList, noteList,event,interview
+    }
   }
 }
 export default IndexPage

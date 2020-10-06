@@ -1,0 +1,13 @@
+## インタビュー記事
+- 日本経済新聞 [CTO協会、企業のデジタル化「自己診断」基準公開](https://www.nikkei.com/article/DGXMZO53262030S9A211C1XY0000/)
++ 日本経済新聞 私見卓見[「2つのDXでデジタル化を　広木大地氏」](https://www.nikkei.com/article/DGXMZO52947260U9A201C1SHE000/)
++ [「日本のDXは片輪が抜け落ちた状態」デジタルトランスフォーメーション実現へ「5つの鉄則」](https://ix-careercompass.jp/article/4522/)
++ [「DXで非人間的な仕事を取り除く」ー【COMEMO KOLインタビュー】広木大地さん](https://comemo.nikkei.com/n/ncce26e713401)
++ [「コンピュータ」か「人間」かという区別をしない組織への招待ー広木大地さんブクログ大賞受賞記念インタビュー前編](https://hon.booklog.jp/interview/hirkoki-20190129)
++ [「挑戦できない国」だと思われている今の日本は「異常な事態」―広木大地さんブクログ大賞受賞記念インタビュー後編](https://hon.booklog.jp/interview/hirkoki-20190130)
++ [Qiitaで気になる、あのエンジニアに会ってみた！＜vol.1 広木大地さん＞	Qiita:Zine](https://zine.qiita.com/original/qiita-engineer-hirokidaichi/)
++ [広木大地さん「異なる文法を持つ場所へダイブして、コミュニケーションのハブとなれ」広報とエンジニアリングが調和する組織のつくり方"	PR Table community](http://blog.pr-table.com/daichi_hiroki/)
++ [経営者とエンジニアはなぜ対立しがちなのか？~不確実性に強い組織づくりのポイント](https://flxy.jp/article/1605)
++ [『エンジニアリング組織論への招待』の著者がコンサル会社に伝えた9つのエンジニア文化](https://www.wantedly.com/companies/lmi/post_articles/143949)
++ [開発の"無理ゲー進行"はこう回避せよ！若手エンジニアが締め切りを健全に守るためのストラテジ](https://employment.en-japan.com/engineerhub/entry/2018/02/06/110000)
++ ["一緒に働くメンバーにとっても""本物に会える場所""をコレクション投稿SNSと製品ミュージアムに特化したSaaSサービスを運営するミューゼオが目指す組織"Findy](https://findy-code.io/interviews/muuseo-engineer)
