@@ -3,8 +3,8 @@ import Markdown from "react-markdown";
 import Head from "next/head";
 
 
-import { useEffect, useLayoutEffect } from "react";
-import { Tabs,Tab,ListGroup } from 'react-bootstrap';
+import { useEffect  } from "react";
+import { Tabs,Tab } from 'react-bootstrap';
 
 const Header = () => (
   <header>
