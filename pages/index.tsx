@@ -76,7 +76,7 @@ const getNoteArticles = async () => {
   const contents = json.data.contents;
 
   return contents.map((e:any) => (
-    { title: e.name, url: `https://note.com/hirokidaichi/${e.key}` }
+    { title: e.name, url: `https://note.com/hirokidaichi/n/${e.key}` }
   ));
 };
 
